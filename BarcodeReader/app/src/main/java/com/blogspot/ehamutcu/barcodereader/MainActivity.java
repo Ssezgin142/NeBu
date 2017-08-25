@@ -36,6 +36,8 @@ public class MainActivity extends Activity implements TextToSpeech.OnInitListene
 	private Camera mCamera;
     private CameraPreview mPreview;
     private Handler autoFocusHandler;
+    private FrameLayout preview;
+
 
     ImageScanner scanner;
     String metin;
@@ -95,12 +97,17 @@ public class MainActivity extends Activity implements TextToSpeech.OnInitListene
 
                     speak(metin1, uttIdMetin);
 
+
                 }
 
             }
 
         };
         handler.post(runnable);
+        barkod();
+
+    }
+    public void barkod() {
         setRequestedOrientation(ActivityInfo.SCREEN_ORIENTATION_PORTRAIT);
 
         autoFocusHandler = new Handler();
@@ -112,7 +119,7 @@ public class MainActivity extends Activity implements TextToSpeech.OnInitListene
         scanner.setConfig(0, Config.Y_DENSITY, 3);
 
         mPreview = new CameraPreview(this, mCamera, previewCb, autoFocusCB);
-        FrameLayout preview = (FrameLayout)findViewById(R.id.cameraPreview);
+        preview = (FrameLayout)findViewById(R.id.cameraPreview);
         preview.addView(mPreview);
 
     }
@@ -131,7 +138,8 @@ public class MainActivity extends Activity implements TextToSpeech.OnInitListene
         Camera c = null;
         try {
             c = Camera.open();
-        } catch (Exception e){
+        }
+        catch (Exception e){
         }
         return c;
     }
@@ -349,12 +357,13 @@ public class MainActivity extends Activity implements TextToSpeech.OnInitListene
         switch (cevap){
 
             case evet:
-                speak(metin1,uttIdMetin2);
-                releaseCamera();
-
+                speak(metin1,uttIdMetin);
+                
+                barkod();
                 break;
             case hayır:
                 speak("güle güle",uttIdMetin);
+
                 System.exit(0);
                 break;
             default:

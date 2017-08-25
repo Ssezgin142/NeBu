@@ -1,8 +1,4 @@
-/*
- * Barebones implementation of displaying camera preview.
- * 
- * Created by lisah0 on 2012-02-24
- */
+
 package com.blogspot.ehamutcu.barcodereader;
 
 import java.io.IOException;
@@ -66,6 +62,7 @@ public class CameraPreview extends SurfaceView implements SurfaceHolder.Callback
 
     public void surfaceDestroyed(SurfaceHolder holder) {
         // Camera preview released in activity
+
     }
 
     public void surfaceChanged(SurfaceHolder holder, int format, int width, int height) {
@@ -75,6 +72,7 @@ public class CameraPreview extends SurfaceView implements SurfaceHolder.Callback
          */
         if (mHolder.getSurface() == null){
           // preview surface does not exist
+
           return;
         }
 
@@ -97,6 +95,7 @@ public class CameraPreview extends SurfaceView implements SurfaceHolder.Callback
             mCamera.setPreviewCallback(previewCallback);
             mCamera.startPreview();
             mCamera.autoFocus(autoFocusCallback);
+
         } catch (Exception e){
             Log.d("DBG", "Error starting camera preview: " + e.getMessage());
         }
