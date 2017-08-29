@@ -1,12 +1,12 @@
 -- Merging decision tree log ---
 manifest
-ADDED from C:\Users\zelal\Documents\GitHub\NeBu\BarcodeReader\app\src\main\AndroidManifest.xml:2:1-33:12
-INJECTED from C:\Users\zelal\Documents\GitHub\NeBu\BarcodeReader\app\src\main\AndroidManifest.xml:2:1-33:12
-INJECTED from C:\Users\zelal\Documents\GitHub\NeBu\BarcodeReader\app\src\main\AndroidManifest.xml:2:1-33:12
-INJECTED from C:\Users\zelal\Documents\GitHub\NeBu\BarcodeReader\app\src\main\AndroidManifest.xml:2:1-33:12
-INJECTED from C:\Users\zelal\Documents\GitHub\NeBu\BarcodeReader\app\src\main\AndroidManifest.xml:2:1-33:12
-INJECTED from C:\Users\zelal\Documents\GitHub\NeBu\BarcodeReader\app\src\main\AndroidManifest.xml:2:1-33:12
-INJECTED from C:\Users\zelal\Documents\GitHub\NeBu\BarcodeReader\app\src\main\AndroidManifest.xml:2:1-33:12
+ADDED from C:\Users\zelal\Documents\GitHub\NeBu\BarcodeReader\app\src\main\AndroidManifest.xml:2:1-42:12
+INJECTED from C:\Users\zelal\Documents\GitHub\NeBu\BarcodeReader\app\src\main\AndroidManifest.xml:2:1-42:12
+INJECTED from C:\Users\zelal\Documents\GitHub\NeBu\BarcodeReader\app\src\main\AndroidManifest.xml:2:1-42:12
+INJECTED from C:\Users\zelal\Documents\GitHub\NeBu\BarcodeReader\app\src\main\AndroidManifest.xml:2:1-42:12
+INJECTED from C:\Users\zelal\Documents\GitHub\NeBu\BarcodeReader\app\src\main\AndroidManifest.xml:2:1-42:12
+INJECTED from C:\Users\zelal\Documents\GitHub\NeBu\BarcodeReader\app\src\main\AndroidManifest.xml:2:1-42:12
+INJECTED from C:\Users\zelal\Documents\GitHub\NeBu\BarcodeReader\app\src\main\AndroidManifest.xml:2:1-42:12
 	package
 		ADDED from C:\Users\zelal\Documents\GitHub\NeBu\BarcodeReader\app\src\main\AndroidManifest.xml:3:5-50
 		INJECTED from C:\Users\zelal\Documents\GitHub\NeBu\BarcodeReader\app\src\main\AndroidManifest.xml
@@ -52,7 +52,7 @@ ADDED from C:\Users\zelal\Documents\GitHub\NeBu\BarcodeReader\app\src\main\Andro
 	android:name
 		ADDED from C:\Users\zelal\Documents\GitHub\NeBu\BarcodeReader\app\src\main\AndroidManifest.xml:14:22-76
 application
-ADDED from C:\Users\zelal\Documents\GitHub\NeBu\BarcodeReader\app\src\main\AndroidManifest.xml:17:5-31:19
+ADDED from C:\Users\zelal\Documents\GitHub\NeBu\BarcodeReader\app\src\main\AndroidManifest.xml:17:5-40:19
 	android:label
 		ADDED from C:\Users\zelal\Documents\GitHub\NeBu\BarcodeReader\app\src\main\AndroidManifest.xml:20:9-41
 	android:icon
@@ -67,13 +67,25 @@ ADDED from C:\Users\zelal\Documents\GitHub\NeBu\BarcodeReader\app\src\main\Andro
 		ADDED from C:\Users\zelal\Documents\GitHub\NeBu\BarcodeReader\app\src\main\AndroidManifest.xml:24:13-45
 	android:name
 		ADDED from C:\Users\zelal\Documents\GitHub\NeBu\BarcodeReader\app\src\main\AndroidManifest.xml:23:13-76
-intent-filter#android.intent.action.MAIN+android.intent.category.LAUNCHER
+intent-filter#android.intent.action.MAIN+android.intent.category.DEFAULT
 ADDED from C:\Users\zelal\Documents\GitHub\NeBu\BarcodeReader\app\src\main\AndroidManifest.xml:25:13-29:29
 action#android.intent.action.MAIN
 ADDED from C:\Users\zelal\Documents\GitHub\NeBu\BarcodeReader\app\src\main\AndroidManifest.xml:26:17-69
 	android:name
 		ADDED from C:\Users\zelal\Documents\GitHub\NeBu\BarcodeReader\app\src\main\AndroidManifest.xml:26:25-66
-category#android.intent.category.LAUNCHER
-ADDED from C:\Users\zelal\Documents\GitHub\NeBu\BarcodeReader\app\src\main\AndroidManifest.xml:28:17-77
+category#android.intent.category.DEFAULT
+ADDED from C:\Users\zelal\Documents\GitHub\NeBu\BarcodeReader\app\src\main\AndroidManifest.xml:28:17-76
 	android:name
-		ADDED from C:\Users\zelal\Documents\GitHub\NeBu\BarcodeReader\app\src\main\AndroidManifest.xml:28:27-74
+		ADDED from C:\Users\zelal\Documents\GitHub\NeBu\BarcodeReader\app\src\main\AndroidManifest.xml:28:27-73
+activity#com.blogspot.ehamutcu.barcodereader.splash
+ADDED from C:\Users\zelal\Documents\GitHub\NeBu\BarcodeReader\app\src\main\AndroidManifest.xml:31:9-39:20
+	android:label
+		ADDED from C:\Users\zelal\Documents\GitHub\NeBu\BarcodeReader\app\src\main\AndroidManifest.xml:33:13-45
+	android:name
+		ADDED from C:\Users\zelal\Documents\GitHub\NeBu\BarcodeReader\app\src\main\AndroidManifest.xml:32:13-70
+intent-filter#android.intent.action.MAIN+android.intent.category.LAUNCHER
+ADDED from C:\Users\zelal\Documents\GitHub\NeBu\BarcodeReader\app\src\main\AndroidManifest.xml:34:13-38:29
+category#android.intent.category.LAUNCHER
+ADDED from C:\Users\zelal\Documents\GitHub\NeBu\BarcodeReader\app\src\main\AndroidManifest.xml:37:17-77
+	android:name
+		ADDED from C:\Users\zelal\Documents\GitHub\NeBu\BarcodeReader\app\src\main\AndroidManifest.xml:37:27-74

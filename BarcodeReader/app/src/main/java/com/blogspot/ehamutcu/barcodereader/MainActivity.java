@@ -27,6 +27,7 @@ import android.widget.TextView;
 
 import java.util.ArrayList;
 import java.util.HashMap;
+import java.util.concurrent.Delayed;
 
 public class MainActivity extends Activity implements TextToSpeech.OnInitListener, TextToSpeech.OnUtteranceCompletedListener {
 
@@ -52,13 +53,16 @@ public class MainActivity extends Activity implements TextToSpeech.OnInitListene
     private String metin1 ="Lütfen bilgi almak istidiğiniz ürünü gösterir misiniz??";
     private static final String uttIdMetin1 = "metin1";
     private String metin2 ="Başka Bir ürün göstermek ister misiniz??";
+    private String metin3 ="Sizi anlayamadım. lütfen tekrar edermisiniz?";
     private static final String uttIdMetin2 = "metin2";
+    private static final String uttIdMetin3 = "metin3";
     private static final String evet="Evet";
     private static final String hayır="Hayır";
     private  static String cevap;
 
     //test
     private int num;
+    private int s;
     private Handler handler;
     private Runnable runnable;
 
@@ -67,7 +71,7 @@ public class MainActivity extends Activity implements TextToSpeech.OnInitListene
 
     static {
         System.loadLibrary("iconv");
-    } 
+    }
 
     public void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
@@ -108,7 +112,9 @@ public class MainActivity extends Activity implements TextToSpeech.OnInitListene
 
     }
     public void barkod() {
+
         setRequestedOrientation(ActivityInfo.SCREEN_ORIENTATION_PORTRAIT);
+
 
         autoFocusHandler = new Handler();
         mCamera = getCameraInstance();
@@ -121,6 +127,7 @@ public class MainActivity extends Activity implements TextToSpeech.OnInitListene
         mPreview = new CameraPreview(this, mCamera, previewCb, autoFocusCB);
         preview = (FrameLayout)findViewById(R.id.cameraPreview);
         preview.addView(mPreview);
+
 
     }
 
@@ -150,6 +157,8 @@ public class MainActivity extends Activity implements TextToSpeech.OnInitListene
             mCamera.setPreviewCallback(null);
             mCamera.release();
             mCamera = null;
+
+
         }
     }
 
@@ -159,6 +168,7 @@ public class MainActivity extends Activity implements TextToSpeech.OnInitListene
             public void run() {
                 if (previewing)
                     mCamera.autoFocus(autoFocusCB);
+
             }
         };
 
@@ -170,23 +180,27 @@ public class MainActivity extends Activity implements TextToSpeech.OnInitListene
                 Image barcode = new Image(size.width, size.height, "Y800");
                 barcode.setData(data);
 
+
+
                 int result = scanner.scanImage(barcode);
                 
                 if (result != 0) {
                     
                     SymbolSet syms = scanner.getResults();
                     for (Symbol sym : syms) {
-                       // scanText.setText("Barkod Sonucu: " + sym.getData());
                         metin=sym.getData();
                         speak(metin, uttIdMetin1);
-                       // scanText.setTextColor(Color.parseColor("#00AF03"));
                         barcodeScanned = true;
                         releaseCamera();
                         Intent intent = new Intent();
                         intent.putExtra("SCAN_RESULT", sym.getData());
                         setResult(RESULT_OK, intent);
+
+
                     }
+
                 }
+
             }
         };
 
@@ -264,6 +278,11 @@ public class MainActivity extends Activity implements TextToSpeech.OnInitListene
                         break;
                     case uttIdMetin2:
                         yaz();
+                        break;
+                    case uttIdMetin3:
+                        System.exit(0);
+                        break;
+
                 }
 
             }
@@ -312,7 +331,7 @@ public class MainActivity extends Activity implements TextToSpeech.OnInitListene
             }
             @Override public void onError(int error) {
 
-               // eror(uttIdMetin1);
+                speak(metin3,uttIdMetin2);
 
             }
             @Override public void onEndOfSpeech() {
@@ -358,17 +377,14 @@ public class MainActivity extends Activity implements TextToSpeech.OnInitListene
 
             case evet:
                 speak(metin1,uttIdMetin);
-                
+
                 barkod();
                 break;
             case hayır:
-                speak("güle güle",uttIdMetin);
-
-                System.exit(0);
+                speak("güle güle",uttIdMetin3);
                 break;
             default:
-
-               // speak(metin5,uttIdMetin5);
+                speak(metin3,uttIdMetin2);
                 break;
         }
     }

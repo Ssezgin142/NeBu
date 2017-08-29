@@ -153,7 +153,14 @@
                     "endOffset": 108
                 },
                 "from": {
-                    "file": "C:\\Users\\zelal\\Documents\\GitHub\\NeBu\\BarcodeReader\\app\\src\\main\\res\\values\\dimens.xml"
+                    "file": "C:\\Users\\zelal\\Documents\\GitHub\\NeBu\\BarcodeReader\\app\\src\\main\\res\\values\\dimens.xml",
+                    "position": {
+                        "startLine": 3,
+                        "startColumn": 4,
+                        "startOffset": 92,
+                        "endColumn": 57,
+                        "endOffset": 145
+                    }
                 }
             },
             {
@@ -165,7 +172,14 @@
                     "endOffset": 164
                 },
                 "from": {
-                    "file": "C:\\Users\\zelal\\Documents\\GitHub\\NeBu\\BarcodeReader\\app\\src\\main\\res\\values\\dimens.xml"
+                    "file": "C:\\Users\\zelal\\Documents\\GitHub\\NeBu\\BarcodeReader\\app\\src\\main\\res\\values\\dimens.xml",
+                    "position": {
+                        "startLine": 4,
+                        "startColumn": 4,
+                        "startOffset": 151,
+                        "endColumn": 55,
+                        "endOffset": 202
+                    }
                 }
             },
             {
@@ -177,7 +191,14 @@
                     "endOffset": 217
                 },
                 "from": {
-                    "file": "C:\\Users\\zelal\\Documents\\GitHub\\NeBu\\BarcodeReader\\app\\src\\main\\res\\values\\strings.xml"
+                    "file": "C:\\Users\\zelal\\Documents\\GitHub\\NeBu\\BarcodeReader\\app\\src\\main\\res\\values\\strings.xml",
+                    "position": {
+                        "startLine": 4,
+                        "startColumn": 4,
+                        "startOffset": 102,
+                        "endColumn": 52,
+                        "endOffset": 150
+                    }
                 }
             },
             {
@@ -208,7 +229,14 @@
                     "endOffset": 312
                 },
                 "from": {
-                    "file": "C:\\Users\\zelal\\Documents\\GitHub\\NeBu\\BarcodeReader\\app\\src\\main\\res\\values\\strings.xml"
+                    "file": "C:\\Users\\zelal\\Documents\\GitHub\\NeBu\\BarcodeReader\\app\\src\\main\\res\\values\\strings.xml",
+                    "position": {
+                        "startLine": 5,
+                        "startColumn": 4,
+                        "startOffset": 156,
+                        "endColumn": 52,
+                        "endOffset": 204
+                    }
                 }
             },
             {
@@ -216,25 +244,41 @@
                     "startLine": 7,
                     "startColumn": 4,
                     "startOffset": 317,
-                    "endLine": 9,
+                    "endLine": 13,
                     "endColumn": 12,
-                    "endOffset": 395
+                    "endOffset": 603
                 },
                 "from": {
-                    "file": "C:\\Users\\zelal\\Documents\\GitHub\\NeBu\\BarcodeReader\\app\\src\\main\\res\\values\\styles.xml"
+                    "file": "C:\\Users\\zelal\\Documents\\GitHub\\NeBu\\BarcodeReader\\app\\src\\main\\res\\values\\styles.xml",
+                    "position": {
+                        "startLine": 6,
+                        "startColumn": 4,
+                        "startOffset": 191,
+                        "endLine": 12,
+                        "endColumn": 12,
+                        "endOffset": 481
+                    }
                 }
             },
             {
                 "to": {
-                    "startLine": 10,
+                    "startLine": 14,
                     "startColumn": 4,
-                    "startOffset": 400,
-                    "endLine": 12,
+                    "startOffset": 608,
+                    "endLine": 16,
                     "endColumn": 12,
-                    "endOffset": 467
+                    "endOffset": 763
                 },
                 "from": {
-                    "file": "C:\\Users\\zelal\\Documents\\GitHub\\NeBu\\BarcodeReader\\app\\src\\main\\res\\values\\styles.xml"
+                    "file": "C:\\Users\\zelal\\Documents\\GitHub\\NeBu\\BarcodeReader\\app\\src\\main\\res\\values\\styles.xml",
+                    "position": {
+                        "startLine": 15,
+                        "startColumn": 4,
+                        "startOffset": 522,
+                        "endLine": 17,
+                        "endColumn": 12,
+                        "endOffset": 679
+                    }
                 }
             }
         ]
