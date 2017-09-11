@@ -1,4 +1,4 @@
-#Tue Aug 29 16:14:00 EET 2017
+#Mon Sep 11 23:27:00 EET 2017
 base.0=C\:\\Users\\zelal\\Documents\\GitHub\\NeBu\\BarcodeReader\\app\\build\\intermediates\\transforms\\dexMerger\\debug\\0
 renamed.0=classes.dex
 file.0=C\:\\Users\\zelal\\Documents\\GitHub\\NeBu\\BarcodeReader\\app\\build\\intermediates\\transforms\\dexMerger\\debug\\0\\classes.dex

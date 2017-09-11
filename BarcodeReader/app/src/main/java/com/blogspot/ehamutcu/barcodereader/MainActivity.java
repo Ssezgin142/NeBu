@@ -29,6 +29,8 @@ import java.util.ArrayList;
 import java.util.HashMap;
 import java.util.concurrent.Delayed;
 
+import static android.os.SystemClock.sleep;
+
 public class MainActivity extends Activity implements TextToSpeech.OnInitListener, TextToSpeech.OnUtteranceCompletedListener {
 
     //etiket
@@ -60,6 +62,7 @@ public class MainActivity extends Activity implements TextToSpeech.OnInitListene
     private static final String hayır="Hayır";
     private  static String cevap;
 
+
     //test
     private int num;
     private int s;
@@ -68,6 +71,8 @@ public class MainActivity extends Activity implements TextToSpeech.OnInitListene
 
     //konusma algılama
     private SpeechRecognizer speechRecognizer;
+
+    
 
     static {
         System.loadLibrary("iconv");
@@ -113,20 +118,21 @@ public class MainActivity extends Activity implements TextToSpeech.OnInitListene
     }
     public void barkod() {
 
-        setRequestedOrientation(ActivityInfo.SCREEN_ORIENTATION_PORTRAIT);
+           setRequestedOrientation(ActivityInfo.SCREEN_ORIENTATION_PORTRAIT);
 
 
-        autoFocusHandler = new Handler();
-        mCamera = getCameraInstance();
+           autoFocusHandler = new Handler();
+           mCamera = getCameraInstance();
 
         /* Instance barcode scanner */
-        scanner = new ImageScanner();
-        scanner.setConfig(0, Config.X_DENSITY, 3);
-        scanner.setConfig(0, Config.Y_DENSITY, 3);
+           scanner = new ImageScanner();
+           scanner.setConfig(0, Config.X_DENSITY, 3);
+           scanner.setConfig(0, Config.Y_DENSITY, 3);
 
-        mPreview = new CameraPreview(this, mCamera, previewCb, autoFocusCB);
-        preview = (FrameLayout)findViewById(R.id.cameraPreview);
-        preview.addView(mPreview);
+           mPreview = new CameraPreview(this, mCamera, previewCb, autoFocusCB);
+           preview = (FrameLayout)findViewById(R.id.cameraPreview);
+           preview.addView(mPreview);
+
 
 
     }
@@ -147,6 +153,7 @@ public class MainActivity extends Activity implements TextToSpeech.OnInitListene
             c = Camera.open();
         }
         catch (Exception e){
+
         }
         return c;
     }
@@ -155,11 +162,12 @@ public class MainActivity extends Activity implements TextToSpeech.OnInitListene
         if (mCamera != null) {
             previewing = false;
             mCamera.setPreviewCallback(null);
+            mCamera.stopPreview();
             mCamera.release();
             mCamera = null;
-
-
         }
+
+
     }
 
 
@@ -200,6 +208,8 @@ public class MainActivity extends Activity implements TextToSpeech.OnInitListene
                     }
 
                 }
+
+
 
             }
         };
@@ -377,7 +387,7 @@ public class MainActivity extends Activity implements TextToSpeech.OnInitListene
 
             case evet:
                 speak(metin1,uttIdMetin);
-
+                preview.removeView(mPreview);
                 barkod();
                 break;
             case hayır:
