@@ -1,5 +1,5 @@
 #Internal package file, do not edit.
-#Tue Sep 19 23:58:55 EET 2017
+#Wed Sep 20 13:43:11 EET 2017
 25.file=C\:\\Users\\zelal\\Documents\\GitHub\\NeBu\\app\\build\\intermediates\\res\\debug\\resources-debug.ap_\\res\\mipmap-xhdpi-v4\\ic_launcherr.png
 25.base=C\:\\Users\\zelal\\Documents\\GitHub\\NeBu\\app\\build\\intermediates\\res\\debug\\resources-debug.ap_
 22.set=ANDROID_RESOURCE
@@ -69,7 +69,7 @@ count=28
 18.set=ANDROID_RESOURCE
 19.file=C\:\\Users\\zelal\\Documents\\GitHub\\NeBu\\app\\build\\intermediates\\res\\debug\\resources-debug.ap_\\res\\mipmap-xhdpi-v4\\ic_launcher.png
 19.base=C\:\\Users\\zelal\\Documents\\GitHub\\NeBu\\app\\build\\intermediates\\res\\debug\\resources-debug.ap_
-12.file=C\:\\Users\\zelal\\Documents\\GitHub\\NeBu\\app\\build\\intermediates\\res\\debug\\resources-debug.ap_\\res\\mipmap-xxhdpi-v4\\ic_launcherr.png
+12.file=C\:\\Users\\zelal\\Documents\\GitHub\\NeBu\\app\\build\\intermediates\\res\\debug\\resources-debug.ap_\\res\\drawable-mdpi-v4\\ic_launcher.png
 12.base=C\:\\Users\\zelal\\Documents\\GitHub\\NeBu\\app\\build\\intermediates\\res\\debug\\resources-debug.ap_
 4.set=ANDROID_RESOURCE
 4.file=C\:\\Users\\zelal\\Documents\\GitHub\\NeBu\\app\\build\\intermediates\\res\\debug\\resources-debug.ap_\\res\\menu-v11\\main.xml
@@ -80,7 +80,7 @@ count=28
 24.base=C\:\\Users\\zelal\\Documents\\GitHub\\NeBu\\app\\build\\intermediates\\res\\debug\\resources-debug.ap_
 12.set=ANDROID_RESOURCE
 17.set=ANDROID_RESOURCE
-13.file=C\:\\Users\\zelal\\Documents\\GitHub\\NeBu\\app\\build\\intermediates\\res\\debug\\resources-debug.ap_\\res\\drawable-mdpi-v4\\ic_launcher.png
+13.file=C\:\\Users\\zelal\\Documents\\GitHub\\NeBu\\app\\build\\intermediates\\res\\debug\\resources-debug.ap_\\res\\mipmap-xxhdpi-v4\\ic_launcherr.png
 13.base=C\:\\Users\\zelal\\Documents\\GitHub\\NeBu\\app\\build\\intermediates\\res\\debug\\resources-debug.ap_
 5.file=C\:\\Users\\zelal\\Documents\\GitHub\\NeBu\\app\\build\\intermediates\\transforms\\mergeJniLibs\\debug\\0\\lib\\armeabi\\libiconv.so
 3.set=ANDROID_RESOURCE
