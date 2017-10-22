@@ -58,7 +58,7 @@ ADDED from C:\Users\zelal\Documents\GitHub\NeBu\app\src\main\AndroidManifest.xml
 	android:icon
 		ADDED from C:\Users\zelal\Documents\GitHub\NeBu\app\src\main\AndroidManifest.xml:19:9-45
 	android:allowBackup
-		ADDED from C:\Users\zelal\Documents\GitHub\NeBu\app\src\main\AndroidManifest.xml:18:9-35
+		ADDED from C:\Users\zelal\Documents\GitHub\NeBu\app\src\main\AndroidManifest.xml:18:9-36
 	android:theme
 		ADDED from C:\Users\zelal\Documents\GitHub\NeBu\app\src\main\AndroidManifest.xml:21:9-40
 activity#com.suzansezgin.suzi.nebu.MainActivity

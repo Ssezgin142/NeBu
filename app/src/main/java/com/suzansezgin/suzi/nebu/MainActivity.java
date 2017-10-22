@@ -97,19 +97,18 @@ public class MainActivity extends Activity implements TextToSpeech.OnInitListene
 
                 if(num > 0) {
 
-
                     num--;
-                    handler.postDelayed(runnable, 100);
+                    handler.postDelayed(runnable, 2000);
 
                 }else if(num == 0){
 
 
                     num = 1;
-
                     speak(metin1, uttIdMetin);
 
 
                 }
+
 
             }
 
@@ -119,7 +118,6 @@ public class MainActivity extends Activity implements TextToSpeech.OnInitListene
 
     }
     public void barkod() {
-
            setRequestedOrientation(ActivityInfo.SCREEN_ORIENTATION_PORTRAIT);
 
 
@@ -386,7 +384,6 @@ public class MainActivity extends Activity implements TextToSpeech.OnInitListene
     }
     protected void kontrol() {
         switch (cevap){
-
             case evet:
                 speak(metin1,uttIdMetin);
                 preview.removeView(mPreview);

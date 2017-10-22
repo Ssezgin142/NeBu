@@ -28,4 +28,7 @@
   <com.google.android.gms/>
   <com.google.gms/>
   <android.arch.paging/>
+  <com.crashlytics.sdk.android/>
+  <io.fabric.sdk.android/>
+  <android.arch.persistence/>
 </metadata>
